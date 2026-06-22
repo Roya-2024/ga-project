@@ -1,0 +1,14 @@
+name: API Dispatch Test
+
+on:
+  repository_dispatch:
+    types: [trigger-fetch-data]
+  workflow_dispatch:
+
+jobs:
+  test-api-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say triggered
+        run: echo "Workflow triggered successfully"
+
