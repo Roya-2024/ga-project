@@ -1,0 +1,53 @@
+name: 5 - Fetch and send data to S3 Revised
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Fetch data
+        run: |
+          TIMESTAMP=$(date +%s)
+          OUTPUT_FILE="stage/${TIMESTAMP}.csv"
+          mkdir -p stage
+          curl -s -H "User-Agent: Chrome/123.0" https://www.sahamyab.com/guest/twiter/list?v=0.1 | jq '.items[] | [.id, .sendTime, .sendTimePersian, .senderName, .senderUsername, .type, .content] | join(",")' > "$OUTPUT_FILE"
+          echo "Data saved to $OUTPUT_FILE"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Upload to AWS S3
+        run: |
+          python send-to-object-storage.py
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: us-east-2
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "fozouni@hotmail.com"
+          git config --local user.name "fozouni"
+          git add stage/
+          git commit -m "Fetch data at $(date)" || echo "Nothing to commit"
+          git push
