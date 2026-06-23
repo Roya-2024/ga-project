@@ -24,7 +24,7 @@ jobs:
           TIMESTAMP=$(date +%s)
           OUTPUT_FILE="stage/${TIMESTAMP}.csv"
           mkdir -p stage
-          curl -s -H "User-Agent: Chrome/123.0" https://www.sahamyab.com/guest/twiter/list?v=0.1 | jq '.items[] | [.id, .sendTime, .sendTimePersian, .senderName, .senderUsername, .type, .content] | join(",")' > $OUTPUT_FILE
+          curl -s -H "User-Agent: Chrome/123.0" https://www.sahamyab.com/guest/twiter/list?v=0.1 | jq '.items[] | [.id, .sendTime, .sendTimePersian, .senderName, .senderUsername, .type, .content] | join(",")' > "$OUTPUT_FILE"
           echo "Data saved to $OUTPUT_FILE"
 
       - name: Set up Python
@@ -40,8 +40,9 @@ jobs:
         run: |
           python send-to-object-storage.py
         env:
-          ACCESS_KEY: ${{ secrets.S3_BUCKET_ACCESS_KEY }}
-          SECRET_KEY: ${{ secrets.S3_BUCKET_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: us-east-2
 
       - name: Commit and push changes
         run: |
