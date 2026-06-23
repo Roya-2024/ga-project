@@ -1,7 +1,7 @@
 import os
 import boto3
 
-bucket_name = "roya-github-actions-bucket"
+bucket_name = "roya-data-eng-20250610"
 directory = "./stage"
 
 s3 = boto3.client(
