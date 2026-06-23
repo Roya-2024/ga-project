@@ -1,13 +1,14 @@
 name: 2 - different inputs
 
-"on":
-  push:
+on:
   workflow_dispatch:
     inputs:
       MySQL:
+        description: "Run MySQL"
         required: false
         type: boolean
       PostgreSQL:
+        description: "Run PostgreSQL"
         required: false
         type: boolean
 
@@ -17,18 +18,18 @@ jobs:
 
     steps:
       - name: MySQL fetch
-        if: ${{ github.event.inputs.MySQL == 'true' }}
+        if: ${{ inputs.MySQL }}
         run: echo "I will retrieve data from MySQL"
 
       - name: PostgreSQL fetch
-        if: ${{ github.event.inputs.PostgreSQL == 'true' }}
+        if: ${{ inputs.PostgreSQL }}
         run: echo "I will retrieve data from PostgreSQL"
 
       - name: Done
-        run: echo "You did it 😎"
+        run: echo "You did it 😊"
 
       - name: Some Log prop.
         run: |
-          echo "The name of event is = ${{ github.event_name }}"
-          echo "Commit SHA is = ${{ github.sha }}"
-          echo "Runner is = ${{ runner.os }}"
+          echo "The name of event is ${{ github.event_name }}"
+          echo "Commit SHA is ${{ github.sha }}"
+          echo "Runner is ${{ runner.os }}"
