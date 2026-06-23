@@ -1,14 +1,19 @@
-name: API Dispatch Test
+name: Hello Workflow
 
 on:
-  repository_dispatch:
-    types: [trigger-fetch-data]
   workflow_dispatch:
 
 jobs:
-  test-api-trigger:
+  hello:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Say triggered
-        run: echo "Workflow triggered successfully"
+      - name: Say Hello
+        run: echo "Hello Roya!"
+
+      - name: Show Date
+        run: date
+
+      - name: Finish
+        run: echo "Workflow Finished!"
 
