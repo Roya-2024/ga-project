@@ -1,6 +1,6 @@
 name: 2 - different inputs
 
-on:
+"on":
   push:
   workflow_dispatch:
     inputs:
