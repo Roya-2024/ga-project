@@ -1,0 +1,34 @@
+name: 2 - different inputs
+
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      MySQL:
+        required: false
+        type: boolean
+      PostgreSQL:
+        required: false
+        type: boolean
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: MySQL fetch
+        if: ${{ github.event.inputs.MySQL == 'true' }}
+        run: echo "I will retrieve data from MySQL"
+
+      - name: PostgreSQL fetch
+        if: ${{ github.event.inputs.PostgreSQL == 'true' }}
+        run: echo "I will retrieve data from PostgreSQL"
+
+      - name: Done
+        run: echo "You did it 😎"
+
+      - name: Some Log prop.
+        run: |
+          echo "The name of event is = ${{ github.event_name }}"
+          echo "Commit SHA is = ${{ github.sha }}"
+          echo "Runner is = ${{ runner.os }}"
