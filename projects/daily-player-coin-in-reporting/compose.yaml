@@ -1,0 +1,16 @@
+services:
+  report:
+    build: .
+    environment:
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      REPORT_FROM: ${REPORT_FROM:-report-demo@example.invalid}
+      REPORT_TO: ${REPORT_TO:-manager-demo@example.invalid}
+    volumes:
+      - ./data:/app/data:ro
+      - ./reports:/app/reports
+      - report_state:/app/state
+volumes:
+  report_state:

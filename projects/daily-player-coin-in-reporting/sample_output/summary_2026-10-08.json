@@ -1,0 +1,13 @@
+{
+  "synthetic_demo": true,
+  "report_date": "2026-10-08",
+  "timezone": "America/Los_Angeles",
+  "threshold_cents": 1000000,
+  "qualified_players": 19,
+  "qualified_coin_in_cents": 26933409,
+  "report_date_sessions": 104,
+  "valid_sessions": 105,
+  "duplicate_rows_removed": 1,
+  "rejected_rows": 1,
+  "email_status": "draft_only"
+}

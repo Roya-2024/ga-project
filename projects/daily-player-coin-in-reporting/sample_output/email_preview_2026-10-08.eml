@@ -1,0 +1,112 @@
+Subject: [DEMO] Daily Coin-In report =?utf-8?b?4oCU?= 2026-10-08
+From: report-demo@example.invalid
+To: manager-demo@example.invalid
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============2360655763947285896=="
+
+--===============2360655763947285896==
+Content-Type: multipart/alternative;
+ boundary="===============6814218848729003396=="
+
+--===============6814218848729003396==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Synthetic-data demo for 2026-10-08.
+19 players exceeded the daily threshold.
+1 invalid rows were excluded; review quality results.
+The Excel-compatible CSV report is attached. Coin-In is not revenue.
+
+--===============6814218848729003396==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html lang=3D"en"><meta charset=3D"utf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1">
+<title>Daily player Coin-In report</title><style>
+body{font:16px system-ui,sans-serif;background:#f1f5f9;color:#172337;margin:0=
+;padding:32px}
+main{max-width:1100px;margin:auto;background:white;padding:30px;border-radius=
+:12px}
+h1{margin:10px 0;color:#143859} .label{color:#536579;font-size:14px}
+.metrics{display:flex;gap:32px;flex-wrap:wrap;background:#e9f3f6;padding:22px=
+;margin:24px 0}
+.metrics strong{display:block;font-size:28px;color:#125361}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:lef=
+t;padding:12px;border-bottom:1px solid #dce3ea}
+th{background:#143859;color:white} .table-wrap{overflow:auto}</style>
+<main><p class=3D"label">SYNTHETIC DATA =C2=B7 PORTFOLIO DEMO</p><h1>Daily pl=
+ayer Coin-In report</h1>
+<p>2026-10-08 =C2=B7 America/Los_Angeles =C2=B7 Daily total strictly greater =
+than
+$10,000.00</p>
+<div class=3D"metrics"><div><strong>19</strong>Qualifying players</div>
+<div><strong>$269,334.09</strong>Qualifying Coin-In</div>
+<div><strong>104</strong>Valid sessions on report date</div></div>
+<p>Quality review: 1 duplicate rows removed;
+1 invalid rows quarantined. Coin-In is wagering volume, not casino revenue.</=
+p>
+<div class=3D"table-wrap"><table><thead><tr><th>Date</th><th>Player ID</th><t=
+h>Locations</th>
+<th>Sessions</th><th>Coin-In (USD)</th></tr></thead><tbody><tr><td>2026-10-08=
+</td><td>DEMO-P0007</td><td>Demo South, Demo West</td><td>4</td><td>20048.11<=
+/td></tr><tr><td>2026-10-08</td><td>DEMO-P0013</td><td>Demo North, Demo West<=
+/td><td>4</td><td>19167.07</td></tr><tr><td>2026-10-08</td><td>DEMO-P0020</td=
+><td>Demo North, Demo South, Demo West</td><td>4</td><td>18572.15</td></tr><t=
+r><td>2026-10-08</td><td>DEMO-P0012</td><td>Demo North</td><td>4</td><td>1786=
+2.45</td></tr><tr><td>2026-10-08</td><td>DEMO-P0021</td><td>Demo North, Demo =
+South</td><td>4</td><td>16612.52</td></tr><tr><td>2026-10-08</td><td>DEMO-P00=
+24</td><td>Demo North, Demo South</td><td>4</td><td>16605.23</td></tr><tr><td=
+>2026-10-08</td><td>DEMO-P0035</td><td>Demo North, Demo South, Demo West</td>=
+<td>3</td><td>16578.25</td></tr><tr><td>2026-10-08</td><td>DEMO-P0026</td><td=
+>Demo North</td><td>4</td><td>15583.47</td></tr><tr><td>2026-10-08</td><td>DE=
+MO-P0029</td><td>Demo South, Demo West</td><td>4</td><td>14040.25</td></tr><t=
+r><td>2026-10-08</td><td>DEMO-P0034</td><td>Demo North, Demo South</td><td>3<=
+/td><td>13689.72</td></tr><tr><td>2026-10-08</td><td>DEMO-P0005</td><td>Demo =
+North, Demo South, Demo West</td><td>3</td><td>12279.32</td></tr><tr><td>2026=
+-10-08</td><td>DEMO-P0017</td><td>Demo North</td><td>2</td><td>12036.17</td><=
+/tr><tr><td>2026-10-08</td><td>DEMO-P0016</td><td>Demo North, Demo West</td><=
+td>2</td><td>11979.97</td></tr><tr><td>2026-10-08</td><td>DEMO-P0003</td><td>=
+Demo North, Demo South, Demo West</td><td>4</td><td>11896.83</td></tr><tr><td=
+>2026-10-08</td><td>DEMO-P0018</td><td>Demo North</td><td>3</td><td>11577.81<=
+/td></tr><tr><td>2026-10-08</td><td>DEMO-P0010</td><td>Demo North, Demo South=
+, Demo West</td><td>3</td><td>10375.59</td></tr><tr><td>2026-10-08</td><td>DE=
+MO-P0011</td><td>Demo West</td><td>2</td><td>10244.03</td></tr><tr><td>2026-1=
+0-08</td><td>DEMO-P0028</td><td>Demo South</td><td>2</td><td>10185.14</td></t=
+r><tr><td>2026-10-08</td><td>DEMO-P1001</td><td>Demo South</td><td>1</td><td>=
+10000.01</td></tr></tbody></table></div>
+<p class=3D"label">Calendar-day aggregation across all locations. This demo h=
+as no real player records.</p></main></html>
+
+--===============6814218848729003396==--
+
+--===============2360655763947285896==
+Content-Type: text/csv
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename="high_coin_in_players_2026-10-08.csv"
+MIME-Version: 1.0
+
+77u/cmVwb3J0X2RhdGUscGxheWVyX2lkLGxvY2F0aW9ucyxzZXNzaW9uX2NvdW50LGNvaW5faW5f
+dXNkDQoyMDI2LTEwLTA4LERFTU8tUDAwMDcsIkRlbW8gU291dGgsIERlbW8gV2VzdCIsNCwyMDA0
+OC4xMQ0KMjAyNi0xMC0wOCxERU1PLVAwMDEzLCJEZW1vIE5vcnRoLCBEZW1vIFdlc3QiLDQsMTkx
+NjcuMDcNCjIwMjYtMTAtMDgsREVNTy1QMDAyMCwiRGVtbyBOb3J0aCwgRGVtbyBTb3V0aCwgRGVt
+byBXZXN0Iiw0LDE4NTcyLjE1DQoyMDI2LTEwLTA4LERFTU8tUDAwMTIsRGVtbyBOb3J0aCw0LDE3
+ODYyLjQ1DQoyMDI2LTEwLTA4LERFTU8tUDAwMjEsIkRlbW8gTm9ydGgsIERlbW8gU291dGgiLDQs
+MTY2MTIuNTINCjIwMjYtMTAtMDgsREVNTy1QMDAyNCwiRGVtbyBOb3J0aCwgRGVtbyBTb3V0aCIs
+NCwxNjYwNS4yMw0KMjAyNi0xMC0wOCxERU1PLVAwMDM1LCJEZW1vIE5vcnRoLCBEZW1vIFNvdXRo
+LCBEZW1vIFdlc3QiLDMsMTY1NzguMjUNCjIwMjYtMTAtMDgsREVNTy1QMDAyNixEZW1vIE5vcnRo
+LDQsMTU1ODMuNDcNCjIwMjYtMTAtMDgsREVNTy1QMDAyOSwiRGVtbyBTb3V0aCwgRGVtbyBXZXN0
+Iiw0LDE0MDQwLjI1DQoyMDI2LTEwLTA4LERFTU8tUDAwMzQsIkRlbW8gTm9ydGgsIERlbW8gU291
+dGgiLDMsMTM2ODkuNzINCjIwMjYtMTAtMDgsREVNTy1QMDAwNSwiRGVtbyBOb3J0aCwgRGVtbyBT
+b3V0aCwgRGVtbyBXZXN0IiwzLDEyMjc5LjMyDQoyMDI2LTEwLTA4LERFTU8tUDAwMTcsRGVtbyBO
+b3J0aCwyLDEyMDM2LjE3DQoyMDI2LTEwLTA4LERFTU8tUDAwMTYsIkRlbW8gTm9ydGgsIERlbW8g
+V2VzdCIsMiwxMTk3OS45Nw0KMjAyNi0xMC0wOCxERU1PLVAwMDAzLCJEZW1vIE5vcnRoLCBEZW1v
+IFNvdXRoLCBEZW1vIFdlc3QiLDQsMTE4OTYuODMNCjIwMjYtMTAtMDgsREVNTy1QMDAxOCxEZW1v
+IE5vcnRoLDMsMTE1NzcuODENCjIwMjYtMTAtMDgsREVNTy1QMDAxMCwiRGVtbyBOb3J0aCwgRGVt
+byBTb3V0aCwgRGVtbyBXZXN0IiwzLDEwMzc1LjU5DQoyMDI2LTEwLTA4LERFTU8tUDAwMTEsRGVt
+byBXZXN0LDIsMTAyNDQuMDMNCjIwMjYtMTAtMDgsREVNTy1QMDAyOCxEZW1vIFNvdXRoLDIsMTAx
+ODUuMTQNCjIwMjYtMTAtMDgsREVNTy1QMTAwMSxEZW1vIFNvdXRoLDEsMTAwMDAuMDENCg==
+
+--===============2360655763947285896==--

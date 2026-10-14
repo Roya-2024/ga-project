@@ -1,0 +1,2 @@
+row_number,reason
+107,"amount must be finite and between 0 and 1,000,000,000"

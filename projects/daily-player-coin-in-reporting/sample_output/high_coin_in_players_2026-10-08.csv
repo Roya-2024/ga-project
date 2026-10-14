@@ -1,0 +1,20 @@
+report_date,player_id,locations,session_count,coin_in_usd
+2026-10-08,DEMO-P0007,"Demo South, Demo West",4,20048.11
+2026-10-08,DEMO-P0013,"Demo North, Demo West",4,19167.07
+2026-10-08,DEMO-P0020,"Demo North, Demo South, Demo West",4,18572.15
+2026-10-08,DEMO-P0012,Demo North,4,17862.45
+2026-10-08,DEMO-P0021,"Demo North, Demo South",4,16612.52
+2026-10-08,DEMO-P0024,"Demo North, Demo South",4,16605.23
+2026-10-08,DEMO-P0035,"Demo North, Demo South, Demo West",3,16578.25
+2026-10-08,DEMO-P0026,Demo North,4,15583.47
+2026-10-08,DEMO-P0029,"Demo South, Demo West",4,14040.25
+2026-10-08,DEMO-P0034,"Demo North, Demo South",3,13689.72
+2026-10-08,DEMO-P0005,"Demo North, Demo South, Demo West",3,12279.32
+2026-10-08,DEMO-P0017,Demo North,2,12036.17
+2026-10-08,DEMO-P0016,"Demo North, Demo West",2,11979.97
+2026-10-08,DEMO-P0003,"Demo North, Demo South, Demo West",4,11896.83
+2026-10-08,DEMO-P0018,Demo North,3,11577.81
+2026-10-08,DEMO-P0010,"Demo North, Demo South, Demo West",3,10375.59
+2026-10-08,DEMO-P0011,Demo West,2,10244.03
+2026-10-08,DEMO-P0028,Demo South,2,10185.14
+2026-10-08,DEMO-P1001,Demo South,1,10000.01
